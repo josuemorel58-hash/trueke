@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Trueke",
+    "slug": "refrigerio",
+    "version": "1.0.0",
+    "orientation": "default",
+    "scheme": "refrigerio",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.refrigerio.app"
+    },
+    "android": {
+      "package": "com.refrigerio.app"
+    },
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "microphonePermission": false,
+          "cameraPermission": "Permite a Trueke tomar tu foto de perfil.",
+          "photosPermission": "Permite a Trueke elegir tu foto de perfil."
+        }
+      ],
+      "expo-system-ui",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Permite a Trueke obtener tu ubicación al compartirla para preparar intercambios cercanos.",
+          "isIosBackgroundLocationEnabled": false,
+          "isAndroidBackgroundLocationEnabled": false,
+          "isAndroidForegroundServiceEnabled": false
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "aa55255f-aa89-4c71-b808-133884a9c817"
+      }
+    },
+    "icon": "./assets/trueke-icon.png"
+  }
+}
